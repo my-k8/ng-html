@@ -28,7 +28,7 @@ jobs:
 
       - name: Teststep
         run: |
-          lstat /home/runner/work/ng-html && ls && pwd && uname -a
+          ls -ld /home/runner/work/ng-html && ls && pwd && uname -a
 
       - name: Run tests
         run: |
