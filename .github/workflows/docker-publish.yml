@@ -26,6 +26,10 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
+      - name: Teststep
+        run: |
+          ls && cat Dockerfile && pwd && uname -a
+
       - name: Run tests
         run: |
           if [ -f docker-compose.test.yml ]; then
