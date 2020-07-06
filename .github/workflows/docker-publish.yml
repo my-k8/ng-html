@@ -28,7 +28,7 @@ jobs:
 
       - name: Teststep
         run: |
-          ls && cat Dockerfile && pwd && uname -a
+          ls && pwd && uname -a
 
       - name: Run tests
         run: |
